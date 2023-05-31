@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
 
+
   def new
     @post = Post.new
     @post.place_id = params["place_id"]
@@ -15,4 +16,6 @@ class PostsController < ApplicationController
     redirect_to "/places/#{@post["place_id"]}"
   end
 
+  
+  
 end
